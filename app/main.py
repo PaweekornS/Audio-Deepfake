@@ -17,7 +17,7 @@ classifier = SpeechClassifier(
 )
 
 ALLOWED_EXTENSIONS = {".wav", ".mp3"}
-UPLOAD_DIR = Path("mp3_files")
+UPLOAD_DIR = Path("audio")
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True) # Create directory if it doesn't exist
 
 @app.post("/predict")
